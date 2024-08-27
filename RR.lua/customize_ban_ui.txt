@@ -1,0 +1,53 @@
+local aTimer = nil
+local aTimerInterval = 1000
+local aTimerTicks = 0
+local aTimerTickMax = 0
+local function aTimer_tick(timer)
+if aTimerTickMax > 0 and aTimerTicks >= aTimerTickMax then
+timer.destroy()
+end
+aTimerTicks = aTimerTicks + 1
+openProcess("RecRoom.exe")
+if b == 0 or b == 255 then
+openProcess("RecRoom.exe")
+end
+end
+
+function AOBRep(search, change)
+local aob = AOBScan(search)
+if aob then
+for i=0,aob.Count-1 do
+autoAssemble(aob[i]..':\ndb '..change)
+end
+aob.Destroy()
+end
+end
+
+function cbui()
+searchA = '39 00 37 00 66 00 36 00 61 00 64 00 63 00 66 00 35 00 61 00 61 00 61 00 61 00 32 00 31 00 34 00 38 00 39 00 34 00 63 00 38 00 36 00 34 00 38 00 66 00 63 00 32 00 39 00 66 00 35 00 31 00 62 00'
+replaceA = '61 00 39 00 37 00 39 00 38 00 63 00 61 00 64 00 66 00 31 00 30 00 32 00 33 00 65 00 66 00 34 00 63 00 61 00 31 00 36 00 39 00 33 00 64 00 34 00 33 00 63 00 66 00 65 00 62 00 39 00 39 00 39 00'
+AOBRep(searchA,replaceA)
+end
+
+frogster = createForm(true)
+frogster.Width = 300
+frogster.Height = 300
+frogster.Caption = [[FROGGYISCOOL]]
+
+button = createButton(frogster)
+button.Left = 50
+button.Top = 25
+button.Width = 150
+button.Height = 100
+button.onClick = cbui
+button.Caption = 'Customize ban ui'
+
+function AOBRep(search, change)
+local aob = AOBScan(search)
+if aob then
+for i=0,aob.Count-1 do
+autoAssemble(aob[i]..':\ndb '..change)
+end
+aob.Destroy()
+end
+end

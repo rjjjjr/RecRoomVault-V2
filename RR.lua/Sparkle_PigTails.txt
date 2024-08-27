@@ -1,0 +1,56 @@
+local aTimer = nil
+   local aTimerInterval = 1000
+   local aTimerTicks = 0
+   local aTimerTickMax = 0
+   local function aTimer_tick(timer)
+      if aTimerTickMax > 0 and aTimerTicks >= aTimerTickMax then
+         timer.destroy()
+      end
+      aTimerTicks = aTimerTicks + 1
+      openProcess("RecRoom.exe")
+      if b == 0 or b == 255 then
+         openProcess("RecRoom.exe")
+      end
+
+   end
+
+   function AOBRep(search, change)
+   local aob = AOBScan(search)
+   if aob then
+   for i=0,aob.Count-1 do
+      autoAssemble(aob[i]..':\ndb '..change)
+   end
+   aob.Destroy()
+   end
+   end
+
+   function test()
+      searchA = '32 00 38 00 33 00 65 00 39 00 38 00 64 00 64 00 2D 00 31 00 62 00 61 00 37 00 2D 00 34 00 39 00 39 00 37 00 2D 00 38 00 35 00 38 00 66 00 2D 00 39 00 36 00 30 00 34 00 36 00 65 00 30 00 61 00 63 00 34 00 33 00 31'
+      replaceA = '37 00 39 00 62 00 39 00 30 00 32 00 37 00 34 00 2D 00 36 00 65 00 65 00 63 00 2D 00 34 00 36 00 36 00 34 00 2D 00 61 00 63 00 66 00 62 00 2D 00 34 00 61 00 31 00 32 00 33 00 33 00 33 00 34 00 36 00 36 00 31 00 65'
+      AOBRep(searchA,replaceA)
+      searchB = '41 00 63 00 4C 00 41 00 70 00 57 00 4D 00 68 00 41 00 55 00 36 00 74 00 4B 00 31 00 30 00 4F 00 37 00 4B 00 6F 00 4F 00 6F 00 67'
+      replaceB = '50 00 47 00 5A 00 69 00 68 00 72 00 30 00 39 00 36 00 6B 00 43 00 34 00 58 00 5A 00 76 00 48 00 66 00 6D 00 56 00 4D 00 7A 00 41'
+      AOBRep(searchB,replaceB)
+   end
+
+   MyForm = createForm(true)
+   MyForm.Width = 350
+   MyForm.Height = 200
+
+   shbf = createButton(MyForm)
+   shbf.Left = 30
+   shbf.Top = 35
+   shbf.Width = 125
+   shbf.Height = 40
+   shbf.onClick = test
+   shbf.Caption = 'Sparkel Pig Tail'
+
+   function AOBRep(search, change)
+   local aob = AOBScan(search)
+   if aob then
+   for i=0,aob.Count-1 do
+      autoAssemble(aob[i]..':\ndb '..change)
+   end
+   aob.Destroy()
+   end
+   end

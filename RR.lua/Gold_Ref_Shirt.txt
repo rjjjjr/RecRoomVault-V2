@@ -1,0 +1,59 @@
+local aTimer = nil
+local aTimerInterval = 1000
+local aTimerTicks = 0
+local aTimerTickMax = 0
+local function aTimer_tick(timer)
+   if aTimerTickMax > 0 and aTimerTicks >= aTimerTickMax then
+      timer.destroy()
+   end
+   aTimerTicks = aTimerTicks + 1
+   openProcess("RecRoom.exe")
+   if b == 0 or b == 255 then
+      openProcess("RecRoom.exe")
+   end
+
+end
+
+function AOBRep(search, change)
+local aob = AOBScan(search)
+if aob then
+  for i=0,aob.Count-1 do
+    autoAssemble(aob[i]..':\ndb '..change)
+  end
+  aob.Destroy()
+end
+end
+
+function test()
+searchA = '6F 00 6A 00 76 00 49 00 46 00 43 00 54 00 70 00 4A 00 6B 00 65 00 65 00 67 00 65 00 73 00 74 00 46 00 30 00 36 00 35 00 77 00 41 00 2C 00 31 00 30 00 66 00 59 00 53 00 49 00 42 00 79 00 74 00 6B 00 2D 00 79 00 55 00 6A 00 76 00 65 00 44 00 61 00 34 00 30 00 37 00 77'
+replaceA = '6E 00 34 00 53 00 64 00 69 00 56 00 6D 00 73 00 34 00 6B 00 61 00 71 00 64 00 6A 00 58 00 64 00 62 00 6A 00 52 00 42 00 62 00 77 00 2C 00 59 00 45 00 4D 00 4C 00 42 00 6C 00 4F 00 57 00 73 00 45 00 4F 00 34 00 74 00 45 00 4C 00 48 00 73 00 65 00 5A 00 37 00 4C 00 41'
+AOBRep(searchA,replaceA)
+searchB = '32 00 65 00 35 00 39 00 64 00 38 00 64 00 30 00 2D 00 39 00 31 00 61 00 30 00 2D 00 34 00 34 00 34 00 39 00 2D 00 62 00 66 00 64 00 63 00 2D 00 61 00 35 00 64 00 36 00 36 00 33 00 66 00 64 00 39 00 33 00 34 00 33'
+replaceB = '64 00 38 00 34 00 39 00 39 00 33 00 64 00 64 00 2D 00 34 00 65 00 31 00 35 00 2D 00 34 00 34 00 38 00 31 00 2D 00 39 00 34 00 35 00 30 00 2D 00 66 00 38 00 38 00 61 00 33 00 34 00 63 00 64 00 62 00 63 00 38 00 32'
+AOBRep(searchB,replaceB)
+searchC = '64 00 38 00 34 00 39 00 39 00 33 00 64 00 64 00 2D 00 34 00 65 00 31 00 35 00 2D 00 34 00 34 00 38 00 31 00 2D 00 39 00 34 00 35 00 30 00 2D 00 66 00 38 00 38 00 61 00 33 00 34 00 63 00 64 00 62 00 63 00 38 00 32'
+replaceC = '32 00 65 00 35 00 39 00 64 00 38 00 64 00 30 00 2D 00 39 00 31 00 61 00 30 00 2D 00 34 00 34 00 34 00 39 00 2D 00 62 00 66 00 64 00 63 00 2D 00 61 00 35 00 64 00 36 00 36 00 33 00 66 00 64 00 39 00 33 00 34 00 33'
+AOBRep(searchC,replaceC)
+end
+
+MyForm = createForm(true)
+MyForm.Width = 350
+MyForm.Height = 200
+
+shbf = createButton(MyForm)
+shbf.Left = 30
+shbf.Top = 35
+shbf.Width = 125
+shbf.Height = 40
+shbf.onClick = test
+shbf.Caption = 'gold ref shirt'
+
+function AOBRep(search, change)
+local aob = AOBScan(search)
+if aob then
+  for i=0,aob.Count-1 do
+    autoAssemble(aob[i]..':\ndb '..change)
+  end
+  aob.Destroy()
+end
+end

@@ -1,0 +1,640 @@
+local aTimer = nil
+local aTimerInterval = 1000
+local aTimerTicks = 0
+local aTimerTickMax = 0
+
+local function aTimer_tick(timer)
+   if aTimerTickMax > 0 and aTimerTicks >= aTimerTickMax then
+      timer.destroy()
+   end
+   aTimerTicks = aTimerTicks + 1
+   openProcess("RecRoom.exe")
+   if b == 0 or b == 255 then
+      openProcess("RecRoom.exe")
+   end
+end
+
+function AOBRep(search, change)
+  local aob = AOBScan(search)
+  if aob then
+    for i=0,aob.Count-1 do
+      autoAssemble(aob[i]..':\ndb '..change)
+    end
+    aob.Destroy()
+  end
+end
+
+
+function nigger()
+  -- SwapsStreamCamToWitch
+  searchA = '5B 48 61 6E 64 68 65 6C 64 53 74 72 65 61 6D 65 72 43 61 6D 65 72 61 5D'
+  replaceA = '5B 51 75 65 73 74 5F 47 6F 62 6C 69 6E 5F 57 69 74 63 68 42 6F 73 73 5D'
+  AOBRep(searchA, replaceA)
+end
+
+function crashfix()
+    searchA = ('5B 00 43 00 68 00 65 00 61 00 74 00 4D 00 61 00 6E 00 61 00 67 00 65 00 72 00 5D 00')
+    replaceA = ('00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00')
+    AOBRep(searchA,replaceA)
+    searchB = ('5B 43 68 65 61 74 4D 61 6E 61 67 65 72 5D')
+    replaceB = ('00 00 00 00 00 00 00 00 00 00 00 00 00 00')
+    AOBRep(searchB,replaceB)
+    searchC = ('51 75 69 74')
+    replaceC = ('00 00 00 00')
+    AOBRep(searchC,replaceC)
+    searchD = ('41 70 70 6C 69 63 61 74 69 6F 6E 51 75 69 74')
+    replaceD = ('00 00 00 00 00 00 00 00 00 00 00 00 00 00 00')
+    AOBRep(searchD,replaceD)
+end
+
+local function crashfix1()
+    local newWindow = createForm(true)
+    newWindow.caption = "Tut"
+    newWindow.Width = 900
+    newWindow.Height = 180
+    newWindow.Color = 0x00000
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "       How to use the crash fix. U first use Luxz Crash fix first Hit Play and then enable my Script Re Run Script If nothing is lagging."
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 11
+    linTitle.Left = 10
+    linTitle.Top = 50
+    linTitle.Alignment = taCenter
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 0
+    linTitle.Alignment = taCenter
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 150
+    linTitle.Alignment = taCenter
+
+    -- Add more buttons as needed
+
+    newWindow.show()
+end
+
+
+
+function AllWatch()
+searchB = '31 00 61 00 63 00 31 00 35 00 31 00 37 00 37 00 38 00 33 00 30 00 62 00 37 00 37 00 63 00 34 00 32 00 39 00 33 00 38 00 66 00 66 00 34 00 65 00 62 00 36 00 64 00 64 00 62 00 62 00 32 00 34'
+replaceB = '61 00 34 00 62 00 36 00 37 00 35 00 63 00 34 00 32 00 64 00 61 00 64 00 63 00 39 00 38 00 34 00 61 00 38 00 38 00 31 00 65 00 35 00 61 00 61 00 65 00 35 00 61 00 66 00 38 00 35 00 63 00 37'
+AOBRep(searchB,replaceB)
+searchC = '37 00 64 00 38 00 32 00 61 00 34 00 33 00 63 00 33 00 62 00 32 00 65 00 31 00 62 00 34 00 34 00 30 00 38 00 30 00 39 00 33 00 63 00 31 00 63 00 39 00 61 00 34 00 31 00 63 00 37 00 30 00 35'
+replaceC = '61 00 39 00 37 00 39 00 38 00 63 00 61 00 64 00 66 00 31 00 30 00 32 00 33 00 65 00 66 00 34 00 63 00 61 00 31 00 36 00 39 00 33 00 64 00 34 00 33 00 63 00 66 00 65 00 62 00 39 00 39 00 39'
+AOBRep(searchC,replaceC)
+searchE = '32 00 33 00 62 00 37 00 32 00 65 00 37 00 39 00 32 00 39 00 31 00 34 00 62 00 65 00 61 00 34 00 62 00 39 00 35 00 35 00 65 00 30 00 66 00 35 00 62 00 35 00 61 00 61 00 30 00 65 00 33 00 37'
+replaceE = '32 00 63 00 30 00 35 00 39 00 37 00 31 00 30 00 39 00 38 00 63 00 38 00 65 00 30 00 39 00 34 00 30 00 39 00 37 00 31 00 30 00 31 00 66 00 64 00 30 00 30 00 37 00 31 00 63 00 31 00 34 00 38'
+AOBRep(searchE,replaceE)
+end
+
+-- Quest
+
+function goldentrophy()
+searchA = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 42 00 61 00 73 00 69 00 63 00 47 00 72 00 6F 00 75 00 6E 00 64 00 4D 00 65 00 6C 00 65 00 65 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceA = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchA,replaceA)
+searchB = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 42 00 61 00 73 00 69 00 63 00 46 00 6C 00 79 00 69 00 6E 00 67 00 52 00 61 00 6E 00 67 00 65 00 64 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceB = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchB,replaceB)
+searchC = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 45 00 6C 00 69 00 74 00 65 00 46 00 6C 00 79 00 69 00 6E 00 67 00 52 00 61 00 6E 00 67 00 65 00 64 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceC = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchC,replaceC)
+searchD = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 45 00 6C 00 69 00 74 00 65 00 47 00 72 00 6F 00 75 00 6E 00 64 00 4D 00 65 00 6C 00 65 00 65 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceD = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchD,replaceD)
+searchE = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 4B 00 6E 00 69 00 67 00 68 00 74 00 43 00 68 00 61 00 72 00 67 00 65 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceE = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchE,replaceE)
+searchF = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 4B 00 6E 00 69 00 67 00 68 00 74 00 53 00 70 00 69 00 6E 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceF = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchF,replaceF)
+searchG = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 47 00 6F 00 62 00 6C 00 69 00 6E 00 5F 00 52 00 6F 00 74 00 61 00 74 00 69 00 6E 00 67 00 42 00 6F 00 73 00 73 00 45 00 6E 00 65 00 6D 00 79 00 5D 00'
+replaceG = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchG,replaceG)
+end
+
+function jumbotron()
+searchA = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 42 00 61 00 73 00 69 00 63 00 46 00 6c 00 79 00 69 00 6e 00 67 00 52 00 61 00 6e 00 67 00 65 00 64 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceA = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchA,replaceA)
+searchB = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 42 00 61 00 73 00 69 00 63 00 47 00 72 00 6f 00 75 00 6e 00 64 00 52 00 61 00 6e 00 67 00 65 00 64 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceB = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchB,replaceB)
+searchC = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 45 00 6c 00 69 00 74 00 65 00 46 00 6c 00 79 00 69 00 6e 00 67 00 52 00 61 00 6e 00 67 00 65 00 64 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceC = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchC,replaceC)
+searchD = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 45 00 6c 00 69 00 74 00 65 00 47 00 72 00 6f 00 75 00 6e 00 64 00 52 00 61 00 6e 00 67 00 65 00 64 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceD = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchD,replaceD)
+searchE = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 4b 00 6e 00 69 00 67 00 68 00 74 00 41 00 73 00 73 00 61 00 73 00 73 00 69 00 6e 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceE = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchE,replaceE)
+searchF = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 46 00 69 00 5f 00 54 00 69 00 6e 00 79 00 47 00 72 00 6f 00 75 00 6e 00 64 00 45 00 78 00 70 00 6c 00 6f 00 73 00 69 00 76 00 65 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceF = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchF,replaceF)
+searchG = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 53 00 63 00 69 00 66 00 69 00 5f 00 4a 00 75 00 6d 00 62 00 6f 00 74 00 72 00 6f 00 6e 00 42 00 6f 00 73 00 73 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceG = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchG,replaceG)
+end
+
+function crescendos()
+searchA = '5B 00 51 00 75 00 65 00 73 00 74 00 5F 00 44 00 72 00 61 00 63 00 75 00 6C 00 61 00 31 00 5F 00 44 00 72 00 61 00 63 00 75 00 6C 00 61 00 42 00 6F 00 73 00 73 00 5D'
+replaceA = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchA,replaceA)
+searchB = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 4d 00 69 00 6e 00 69 00 42 00 6f 00 73 00 73 00 52 00 61 00 6e 00 67 00 65 00 64 00 42 00 61 00 74 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceB = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchB,replaceB)
+searchC = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 4d 00 69 00 6e 00 69 00 42 00 6f 00 73 00 73 00 4c 00 75 00 6e 00 67 00 69 00 6e 00 67 00 57 00 6f 00 6c 00 66 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceC = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchC,replaceC)
+searchD = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 4d 00 69 00 6e 00 69 00 42 00 6f 00 73 00 73 00 47 00 72 00 6f 00 75 00 6e 00 64 00 5f 00 4d 00 75 00 73 00 6b 00 65 00 74 00 5d'
+replaceD = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchD,replaceD)
+searchE = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 4d 00 69 00 6e 00 69 00 42 00 6f 00 73 00 73 00 42 00 6f 00 6e 00 65 00 4d 00 65 00 6c 00 65 00 65 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceE = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchE,replaceE)
+searchF = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 4d 00 69 00 6e 00 69 00 42 00 6f 00 73 00 73 00 47 00 72 00 6f 00 75 00 6e 00 64 00 42 00 6f 00 6e 00 65 00 54 00 68 00 72 00 6f 00 77 00 6e 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceF = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchF,replaceF)
+searchG = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 42 00 61 00 73 00 69 00 63 00 4c 00 75 00 6e 00 67 00 69 00 6e 00 67 00 57 00 6f 00 6c 00 66 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceG = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchG,replaceG)
+searchH = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 42 00 61 00 73 00 69 00 63 00 42 00 6f 00 6e 00 65 00 4d 00 65 00 6c 00 65 00 65 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceH = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchH,replaceH)
+searchI = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 42 00 61 00 73 00 69 00 63 00 4c 00 75 00 6e 00 67 00 69 00 6e 00 67 00 42 00 61 00 74 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceI = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchI,replaceI)
+searchJ = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 42 00 61 00 73 00 69 00 63 00 52 00 61 00 6e 00 67 00 65 00 64 00 42 00 61 00 74 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceJ = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchJ,replaceJ)
+searchK = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 42 00 61 00 73 00 69 00 63 00 43 00 68 00 61 00 72 00 67 00 69 00 6e 00 67 00 57 00 6f 00 6c 00 66 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceK = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchK,replaceK)
+searchL = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 47 00 72 00 6f 00 75 00 6e 00 64 00 5f 00 42 00 6f 00 6e 00 65 00 5f 00 54 00 68 00 72 00 6f 00 77 00 6e 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceL = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchL,replaceL)
+searchM = '5b 00 51 00 75 00 65 00 73 00 74 00 5f 00 44 00 72 00 61 00 63 00 75 00 6c 00 61 00 31 00 5f 00 47 00 72 00 6f 00 75 00 6e 00 64 00 5f 00 4d 00 75 00 73 00 6b 00 65 00 74 00 45 00 6e 00 65 00 6d 00 79 00 5d'
+replaceM = '5B 00 41 00 72 00 65 00 6E 00 61 00 5F 00 53 00 68 00 6F 00 74 00 67 00 75 00 6E 00 5D 00'
+AOBRep(searchM,replaceM)
+end
+
+-- clothing
+
+function saija()
+searchA = '64 00 38 00 34 00 39 00 39 00 33 00 64 00 64 00 2D 00 34 00 65 00 31 00 35 00 2D 00 34 00 34 00 38 00 31 00 2D 00 39 00 34 00 35 00 30 00 2D 00 66 00 38 00 38 00 61 00 33 00 34 00 63 00 64 00 62 00 63 00 38 00 32 00'
+replaceA = '32 00 63 00 36 00 37 00 39 00 66 00 38 00 39 00 2D 00 63 00 37 00 36 00 65 00 2D 00 34 00 63 00 66 00 62 00 2D 00 39 00 34 00 65 00 39 00 2D 00 34 00 34 00 38 00 63 00 38 00 66 00 64 00 34 00 34 00 64 00 35 00 35 00'
+AOBRep(searchA,replaceA)
+searchB = '38 00 61 00 61 00 37 00 39 00 35 00 36 00 33 00 2D 00 61 00 63 00 65 00 31 00 2D 00 34 00 62 00 61 00 37 00 2D 00 61 00 64 00 30 00 63 00 2D 00 66 00 33 00 32 00 31 00 30 00 61 00 37 00 38 00 31 00 34 00 32 00 66 00'
+replaceB = '32 00 63 00 36 00 37 00 39 00 66 00 38 00 39 00 2D 00 63 00 37 00 36 00 65 00 2D 00 34 00 63 00 66 00 62 00 2D 00 39 00 34 00 65 00 39 00 2D 00 34 00 34 00 38 00 63 00 38 00 66 00 64 00 34 00 34 00 64 00 35 00 35 00'
+AOBRep(searchB,replaceB)
+end
+
+function hockey()
+searchA = '64 00 38 00 34 00 39 00 39 00 33 00 64 00 64 00 2D 00 34 00 65 00 31 00 35 00 2D 00 34 00 34 00 38 00 31 00 2D 00 39 00 34 00 35 00 30 00 2D 00 66 00 38 00 38 00 61 00 33 00 34 00 63 00 64 00 62 00 63 00 38 00 32 00'
+replaceA = '64 00 36 00 62 00 30 00 61 00 31 00 65 00 37 00 2D 00 65 00 39 00 31 00 38 00 2D 00 34 00 33 00 65 00 35 00 2D 00 38 00 31 00 39 00 31 00 2D 00 33 00 61 00 38 00 64 00 39 00 64 00 30 00 31 00 64 00 66 00 37 00 63 00'
+AOBRep(searchA,replaceA)
+searchB = '38 00 61 00 61 00 37 00 39 00 35 00 36 00 33 00 2D 00 61 00 63 00 65 00 31 00 2D 00 34 00 62 00 61 00 37 00 2D 00 61 00 64 00 30 00 63 00 2D 00 66 00 33 00 32 00 31 00 30 00 61 00 37 00 38 00 31 00 34 00 32 00 66 00'
+replaceB = '64 00 36 00 62 00 30 00 61 00 31 00 65 00 37 00 2D 00 65 00 39 00 31 00 38 00 2D 00 34 00 33 00 65 00 35 00 2D 00 38 00 31 00 39 00 31 00 2D 00 33 00 61 00 38 00 64 00 39 00 64 00 30 00 31 00 64 00 66 00 37 00 63 00'
+AOBRep(searchB,replaceB)
+end
+
+function swap()
+  searchC = '5B 51 75 65 73 74 5F 47 6F 62 6C 69 6E 5F 57 69 74 63 68 42 6F 73 73 5D'
+  replaceC = '5B 48 61 6E 64 68 65 6C 64 53 74 72 65 61 6D 65 72 43 61 6D 65 72 61 5D'
+  AOBRep(searchC, replaceC)
+end
+
+function feedback()
+  searchD = '5B 46 65 65 64 62 61 63 6B 54 6F 6F 6C 5D'
+  replaceD = '5B 41 72 65 6E 61 5F 50 69 73 74 6F 6C 5D'
+  AOBRep(searchD, replaceD)
+end
+
+function SwapspistoltoFB()
+  searchD = '5B 41 72 65 6E 61 5F 50 69 73 74 6F 6C 5D'
+  replaceD = '5B 46 65 65 64 62 61 63 6B 54 6F 6F 6C 5D'
+  AOBRep(searchD, replaceD)
+end
+
+function SwapsShareCamToCharadesPen()
+  searchD = '5B 53 68 61 72 65 43 61 6D 65 72 61 5D'
+  replaceD = '5B 43 68 61 72 61 64 65 73 50 65 6E 5D'
+  AOBRep(searchD, replaceD)
+end
+
+function SwapsCharadesPenToShareCam()
+  searchD = '5B 43 68 61 72 61 64 65 73 50 65 6E 5D'
+  replaceD = '5B 53 68 61 72 65 43 61 6D 65 72 61 5D'
+  AOBRep(searchD, replaceD)
+end
+
+local function createNewWindow()
+    local newWindow = createForm(true)
+    newWindow.caption = "Clothing"
+    newWindow.Width = 400
+    newWindow.Height = 300
+    newWindow.Color = 0x00000
+
+    -- Create buttons for the new window
+    local btn1 = createButton(newWindow)
+    btn1.Left = 50
+    btn1.Top = 50
+    btn1.Width = 300
+    btn1.Height = 50
+    btn1.Caption = "hockey"
+    btn1.onClick = hockey
+
+    local btn2 = createButton(newWindow)
+    btn2.Left = 50
+    btn2.Top = 120
+    btn2.Width = 300
+    btn2.Height = 50
+    btn2.Caption = "saija"
+    btn2.onClick = saija
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "_________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x800080  -- Purple color
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 46
+    linTitle.Alignment = taCenter
+
+    -- Add more buttons as needed
+
+    newWindow.show()
+end
+
+local function createNewWindow()
+    local newWindow = createForm(true)
+    newWindow.caption = "Spawning"
+    newWindow.Width = 570
+    newWindow.Height = 450
+    newWindow.Font.Color = 0x800080  -- Purple color
+
+    -- Create buttons for the new window
+    local btn1 = createButton(newWindow)
+    btn1.Left = 300
+    btn1.Top = 130
+    btn1.Width = 250
+    btn1.Height = 50
+    btn1.Caption = "Witch = Stream Cam"
+    btn1.onClick = WitchToStreamCam
+
+    local btn2 = createButton(newWindow)
+    btn2.Left = 20
+    btn2.Top = 130
+    btn2.Width = 250
+    btn2.Height = 50
+    btn2.Caption = "StreamCam = Witch"
+    btn2.onClick = SwapsStreamCamToWitch
+
+    local btn3 = createButton(newWindow)
+    btn3.Left = 300
+    btn3.Top = 200
+    btn3.Width = 250
+    btn3.Height = 50
+    btn3.Caption = "Feedback = Pistol"
+    btn3.onClick = feedback
+
+    local btn4 = createButton(newWindow)
+    btn4.Left = 20
+    btn4.Top = 200
+    btn4.Width = 250
+    btn4.Height = 50
+    btn4.Caption = "Pistol = Feedback"
+    btn4.onClick = SwapsPistolBackToFeedback
+
+    local btn5 = createButton(newWindow)
+    btn5.Left = 20
+    btn5.Top = 270
+    btn5.Width = 250
+    btn5.Height = 50
+    btn5.Caption = "ShareCam = CharadesPen"
+    btn5.onClick = SwapsShareCamToCharadesPen
+
+    local btn6 = createButton(newWindow)
+    btn6.Left = 300
+    btn6.Top = 270
+    btn6.Width = 250
+    btn6.Height = 50
+    btn6.Caption = "CharadesPen = ShareCam"
+    btn6.onClick = SwapsCharadesPenToShareCam
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "______________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 46
+    linTitle.Alignment = taCenter
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "______________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 430
+    linTitle.Alignment = taCenter
+
+    -- Add more buttons as needed
+
+    newWindow.show()
+end
+
+--Quest
+local function createNew2Window()
+    local newWindow = createForm(true)
+    newWindow.caption = "Quest"
+    newWindow.Width = 400
+    newWindow.Height = 300
+    newWindow.Font.Color = 0x800080  -- Purple color
+
+    -- Create buttons for the new window
+    local btn1 = createButton(newWindow)
+    btn1.Left = 50
+    btn1.Top = 50
+    btn1.Width = 300
+    btn1.Height = 50
+    btn1.Caption = "Jumbotron"
+    btn1.onClick = jumbotron
+
+    local btn2 = createButton(newWindow)
+    btn2.Left = 50
+    btn2.Top = 120
+    btn2.Width = 300
+    btn2.Height = 50
+    btn2.Caption = "GoldenTrophy"
+    btn2.onClick = goldentrophy
+
+    local btn3 = createButton(newWindow)
+    btn3.Left = 50
+    btn3.Top = 200
+    btn3.Width = 300
+    btn3.Height = 50
+    btn3.Caption = "Crescendo"
+    btn3.onClick = crescendos
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "_________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 11
+    linTitle.Alignment = taCenter
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "_________________________________________________________________________________________________________________"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 10
+    linTitle.Left = 0
+    linTitle.Top = 250
+    linTitle.Alignment = taCenter
+
+    linTitle = createLabel(newWindow)
+    linTitle.caption = "𝗤𝘂𝗲𝘀𝘁 𝗥𝗲𝗺𝗼𝘃𝗲𝗿 :𝗗"
+    linTitle.Font.Color = 0x707070
+    linTitle.Font.Size = 9
+    linTitle.Left = 150
+    linTitle.Top = 8
+    linTitle.Alignment = taCenter
+
+
+
+    -- Add more buttons as needed
+
+    newWindow.show()
+end
+
+local MyForm = createForm(true)
+MyForm.caption = "✟ - Made By Account And Konnie"
+MyForm.Width = 1500
+MyForm.Height = 450
+MyForm.Color = 0x00000
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = ""
+authorLabel.Font.Color = 0x5D8AA8
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.5
+authorLabel.Top = 30
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = ""
+authorLabel.Font.Color = 0x5D8AA8
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.5
+authorLabel.Top = 30
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "..✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨....✨.."
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 15
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.5
+authorLabel.Top = 30
+authorLabel.Alignment = taCenter
+
+local authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "🖤konnie & account"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 9
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 10
+authorLabel.Top = 400
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "____________________________________________________________________________________________________________________________________________________________________________________"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.5
+authorLabel.Top = 50
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨..✨"
+authorLabel.Font.Color = 0x5D8AA8
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.5
+authorLabel.Top = 700
+authorLabel.Alignment = taCenter
+
+
+local function createStar(parent, leftRatio, topRatio)
+    local authorLabel = createLabel(Trending)
+    authorLabel.Parent = parent
+    authorLabel.Caption = "✨"
+    authorLabel.Font.Color = 0x2F4F4F  -- Dark slate gray color for stars
+    authorLabel.Font.Size = 9
+    authorLabel.Left = MyForm.Width * leftRatio
+    authorLabel.Top = MyForm.Height * topRatio
+    authorLabel.Alignment = taCenter
+    return authorLabel
+end
+
+-- Positions for each star label, adjusted for spread
+local labelPositions = {
+    {LeftRatio = 0.1, TopRatio = 0.3},
+    {LeftRatio = 0.3, TopRatio = 0.5},
+    {LeftRatio = 0.5, TopRatio = 0.2},
+    {LeftRatio = 0.7, TopRatio = 0.4},
+    {LeftRatio = 0.9, TopRatio = 0.3},
+    {LeftRatio = 0.2, TopRatio = 0.7},
+    {LeftRatio = 0.6, TopRatio = 0.6},
+    {LeftRatio = 0.8, TopRatio = 0.8},
+    {LeftRatio = 0.4, TopRatio = 0.1},
+    {LeftRatio = 0.85, TopRatio = 0.1},
+    {LeftRatio = 0.15, TopRatio = 0.9},
+    {LeftRatio = 0.65, TopRatio = 0.3},
+    {LeftRatio = 0.35, TopRatio = 0.75},
+    {LeftRatio = 0.75, TopRatio = 0.2},
+    {LeftRatio = 0.25, TopRatio = 0.5},
+    {LeftRatio = 0.55, TopRatio = 0.4},
+    {LeftRatio = 0.95, TopRatio = 0.6},
+    {LeftRatio = 0.45, TopRatio = 0.8},
+    {LeftRatio = 0.1, TopRatio = 0.1},
+    {LeftRatio = 0.3, TopRatio = 0.2},
+    {LeftRatio = 0.12, TopRatio = 0.65},
+    {LeftRatio = 0.42, TopRatio = 0.55},
+    {LeftRatio = 0.72, TopRatio = 0.25},
+    {LeftRatio = 0.82, TopRatio = 0.75},
+    {LeftRatio = 0.22, TopRatio = 0.15},
+    {LeftRatio = 0.32, TopRatio = 0.35},
+    {LeftRatio = 0.52, TopRatio = 0.45},
+    {LeftRatio = 0.62, TopRatio = 0.85},
+    {LeftRatio = 0.92, TopRatio = 0.05},
+    {LeftRatio = 0.14, TopRatio = 0.25},
+    {LeftRatio = 0.24, TopRatio = 0.65},
+    {LeftRatio = 0.54, TopRatio = 0.75},
+    {LeftRatio = 0.74, TopRatio = 0.35},
+    {LeftRatio = 0.84, TopRatio = 0.15},
+    {LeftRatio = 0.16, TopRatio = 0.55},
+    {LeftRatio = 0.36, TopRatio = 0.85},
+    {LeftRatio = 0.66, TopRatio = 0.25},
+    {LeftRatio = 0.86, TopRatio = 0.05},
+    {LeftRatio = 0.02, TopRatio = 0.3},
+    {LeftRatio = 0.04, TopRatio = 0.5},
+    {LeftRatio = 0.06, TopRatio = 0.2},
+    {LeftRatio = 0.08, TopRatio = 0.4},
+    {LeftRatio = 0.1, TopRatio = 0.3},
+    {LeftRatio = 0.12, TopRatio = 0.7},
+    {LeftRatio = 0.14, TopRatio = 0.6},
+    {LeftRatio = 0.16, TopRatio = 0.8},
+    {LeftRatio = 0.18, TopRatio = 0.1},
+    {LeftRatio = 0.20, TopRatio = 0.1},
+    {LeftRatio = 0.22, TopRatio = 0.9},
+    {LeftRatio = 0.24, TopRatio = 0.3},
+    {LeftRatio = 0.26, TopRatio = 0.75},
+    {LeftRatio = 0.28, TopRatio = 0.2},
+    {LeftRatio = 0.30, TopRatio = 0.5},
+    {LeftRatio = 0.32, TopRatio = 0.4},
+    {LeftRatio = 0.34, TopRatio = 0.6},
+    {LeftRatio = 0.36, TopRatio = 0.8},
+    {LeftRatio = 0.38, TopRatio = 0.15},
+    {LeftRatio = 0.40, TopRatio = 0.25},
+    
+    
+    -- Add more entries as needed
+}
+
+-- Create each star label
+for _, pos in ipairs(labelPositions) do
+    createStar(MyForm, pos.LeftRatio, pos.TopRatio)
+end
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "____________________________________________________________________________________________________________________________________________________________________________________"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 89
+authorLabel.Top = 400
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "† 𝔐𝔢𝔫𝔱𝔞𝔩 ℭ𝔩𝔦𝔢𝔫𝔱 †"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 24
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.1
+authorLabel.Top = 100
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "✨† Working Features †✨"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 8.5
+authorLabel.Top = 100
+authorLabel.Alignment = taCenter
+
+authorLabel = createLabel(Trending)
+authorLabel.Parent = MyForm
+authorLabel.Caption = "† 𝔐𝔢𝔫𝔱𝔞𝔩 ℭ𝔩𝔦𝔢𝔫𝔱 †"
+authorLabel.Font.Color = 0x800080  -- Purple color
+authorLabel.Font.Size = 20
+authorLabel.Left = (MyForm.ClientWidth - authorLabel.Width) / 2.1
+authorLabel.Top = 330
+authorLabel.Alignment = taCenter
+
+shbf = createButton(MyForm)
+shbf.Left = 170
+shbf.Top = 300
+shbf.Width = 250
+shbf.Height = 50
+shbf.onClick = AllWatch
+shbf.Caption = 'All Watch Uis'
+
+local moreButtonsBtn = createButton(MyForm)
+moreButtonsBtn.Left = 170
+moreButtonsBtn.Top = 200
+moreButtonsBtn.Width = 250
+moreButtonsBtn.Height = 50
+moreButtonsBtn.Color = 0x800080
+moreButtonsBtn.Caption = "Spawner"
+moreButtonsBtn.onClick = createNewWindow
+
+local moreButtonsBtn = createButton(MyForm)
+moreButtonsBtn.Left = 605
+moreButtonsBtn.Top = 200
+moreButtonsBtn.Width = 200
+moreButtonsBtn.Height = 50
+moreButtonsBtn.Caption = "Crash Fixer 1.1V"
+moreButtonsBtn.onClick = crashfix
+
+local moreButtonsBtn = createButton(MyForm)
+moreButtonsBtn.Left = 605
+moreButtonsBtn.Top = 250
+moreButtonsBtn.Width = 200
+moreButtonsBtn.Height = 30
+moreButtonsBtn.Caption = "How to Use Crash Fix"
+moreButtonsBtn.onClick = crashfix1
+
+local moreButtonsBtn = createButton(MyForm)
+moreButtonsBtn.Left = 170
+moreButtonsBtn.Top = 250
+moreButtonsBtn.Width = 250
+moreButtonsBtn.Height = 50
+moreButtonsBtn.Caption = "Quest Remover"
+moreButtonsBtn.onClick = createNew2Window
+
+local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==79) then local v82=0;while true do if (v82==0) then v19=v0(v3(v30,1,1));return "";end end else local v83=0;local v84;while true do if (v83==0) then v84=v2(v0(v30,16));if v19 then local v105=0;local v106;while true do if (0==v105) then v106=v5(v84,v19);v19=nil;v105=1;end if (v105==1) then return v106;end end else return v84;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v85=0;local v86;while true do if (v85==0) then v86=(v31/((5 -3)^(v32-(2 -1))))%((3 -1)^(((v33-(2 -1)) -(v32-1)) + (620 -(555 + 64)))) ;return v86-(v86%(932 -(857 + 67 + 7))) ;end end else local v87=568 -(367 + 201) ;local v88;while true do if (v87==((1321 -394) -(214 + 713))) then v88=(1 + 1)^(v32-((1066 -(68 + 997)) + 0)) ;return (((v31%(v88 + v88))>=v88) and (878 -(282 + 595))) or (1637 -(1523 + 114)) ;end end end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + (1272 -(226 + 1044)) );v18=v18 + (8 -6) ;return (v36 * (373 -(32 + 85))) + v35 ;end local function v23() local v37=0 + 0 ;local v38;local v39;local v40;local v41;while true do if (v37==(1 + 0)) then return (v41 * (16778173 -(892 + 48 + 17))) + (v40 * (156337 -90801)) + (v39 * (472 -(530 -314))) + v38 ;end if (v37==(0 -0)) then v38,v39,v40,v41=v1(v16,v18,v18 + (353 -(87 + 263)) );v18=v18 + 4 ;v37=181 -(67 + 84 + 29) ;end end end local function v24() local v42=0 -0 ;local v43;local v44;local v45;local v46;local v47;local v48;while true do if (v42==(952 -(802 + 150))) then v43=v23();v44=v23();v42=(1185 -754) -(44 + 386) ;end if (v42==((27 -20) -4)) then if (v47==(0 -0)) then if (v46==(0 + 0 + 0)) then return v48 * (772 -(201 + 449 + 122)) ;else v47=1 + 0 ;v45=997 -((1970 -(87 + 968)) + 82) ;end elseif (v47==(1202 + 845)) then return ((v46==(0 -0)) and (v48 * ((2 -1)/(0 + 0)))) or (v48 * NaN) ;end return v8(v48,v47-(1344 -321) ) * (v45 + (v46/((1189 -(1069 + 118))^(117 -(286 -221))))) ;end if (v42==2) then v47=v20(v44,45 -(9 + 15) ,6 + 25 );v48=((v20(v44,56 -(22 + 2) )==(1 -0)) and  -((2 -1) + 0)) or (792 -(368 + 423)) ;v42=9 -6 ;end if (v42==(19 -(10 + 8))) then v45=1;v46=(v20(v44,1 + 0 ,76 -56 ) * ((444 -(416 + 26))^(102 -70))) + v43 ;v42=(1414 -(447 + 966)) + 1 ;end end end local function v25(v49) local v50=0 -0 ;local v51;local v52;while true do if (v50==(1819 -(1703 + 114))) then v52={};for v91=702 -(306 + 70 + 325) , #v51 do v52[v91]=v2(v1(v3(v51,v91,v91)));end v50=4 -1 ;end if (v50==((254 -(163 + 91)) -0)) then v51=nil;if  not v49 then local v97=0 + (1930 -(1869 + 61)) ;while true do if (v97==(0 -(0 + 0))) then v49=v23();if (v49==(14 -(9 + 5))) then return "";end break;end end end v50=377 -(85 + 291) ;end if (v50==(1268 -((855 -612) + (1568 -546)))) then return v6(v52);end if (v50==(3 -2)) then v51=v3(v16,v18,(v18 + v49) -(1 + 0) );v18=v18 + v49 ;v50=1182 -(1123 + 57) ;end end end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v53=0;local v54;local v55;local v56;local v57;local v58;local v59;local v60;local v61;while true do if (v53==(0 + 0)) then v54=0;v55=nil;v53=2 -1 ;end if ((7 -4)~=v53) then else v60=nil;v61=nil;v53=118 -(4 + 110) ;end if (v53~=4) then else while true do if (v54==(585 -(57 + 527))) then local v100=1427 -(41 + 1386) ;local v101;while true do if (v100==0) then v101=103 -(17 + 86) ;while true do if (v101~=(0 + 0)) then else local v109=0 -0 ;while true do if (v109==(2 -1)) then v101=167 -(122 + 44) ;break;end if (0~=v109) then else v57=nil;v58=nil;v109=1 -0 ;end end end if (v101==(3 -2)) then v54=2;break;end end break;end end end if (v54==0) then local v102=0 + 0 ;while true do if ((0 + 0)~=v102) then else v55=0;v56=nil;v102=1 -0 ;end if (v102~=1) then else v54=66 -(30 + 35) ;break;end end end if (v54==3) then v61=nil;while true do local v107=0;local v108;while true do if (v107==0) then v108=0;while true do if (v108~=(1 + 0)) then else if ((1260 -(1043 + 214))~=v55) then else local v112=0 -0 ;while true do if (0==v112) then local v206=0;while true do if (v206~=(1212 -(323 + 889))) then else for v302=2 -1 ,v23() do v57[v302-1 ]=v28();end return v59;end end end end end if (v55==(580 -(361 + 219))) then local v113=320 -(53 + 267) ;while true do if (v113==1) then v58={};v55=1;break;end if (v113==(0 + 0)) then local v207=0;while true do if (0~=v207) then else v56={};v57={};v207=1;end if ((414 -(15 + 398))~=v207) then else v113=983 -(18 + 964) ;break;end end end end end break;end if (v108==0) then local v110=0 -0 ;local v111;while true do if (v110==0) then v111=0;while true do if (v111==(0 + 0)) then if (v55==(1 + 0)) then local v294=850 -(20 + 830) ;local v295;local v296;while true do if (v294==(0 + 0)) then v295=0;v296=nil;v294=127 -(116 + 10) ;end if (v294==(1 + 0)) then while true do if (v295==0) then v296=738 -(542 + 196) ;while true do if (v296==(1 -0)) then v61={};v55=2;break;end if (v296==(0 + 0)) then v59={v56,v57,nil,v58};v60=v23();v296=1;end end break;end end break;end end end if (v55~=(4 -2)) then else local v297=1551 -(1126 + 425) ;local v298;while true do if (v297==(405 -(118 + 287))) then v298=0 -0 ;while true do if (v298~=(1121 -(118 + 1003))) then else local v317=0 -0 ;while true do if (v317==(377 -(142 + 235))) then for v328=1,v60 do local v329=0;local v330;local v331;local v332;local v333;while true do if (v329~=(4 -3)) then else v332=nil;v333=nil;v329=1 + 1 ;end if (v329~=2) then else while true do if (v330==(978 -(553 + 424))) then v333=nil;while true do if (v331==0) then local v340=0;local v341;while true do if (v340==0) then v341=0;while true do if ((0 -0)==v341) then local v345=0;local v346;while true do if (v345==(0 + 0)) then v346=0;while true do if (1==v346) then v341=1;break;end if (v346~=0) then else local v355=0 + 0 ;while true do if (v355==(1 + 0)) then v346=1;break;end if (v355~=(0 + 0)) then else v332=v21();v333=nil;v355=1 + 0 ;end end end end break;end end end if (v341~=(2 -1)) then else v331=1;break;end end break;end end end if (v331~=(2 -1)) then else if (v332==(2 -1)) then v333=v21()~=(0 + 0) ;elseif (v332==(9 -7)) then v333=v24();elseif (v332==3) then v333=v25();end v61[v328]=v333;break;end end break;end if ((753 -(239 + 514))==v330) then v331=0 + 0 ;v332=nil;v330=1;end end break;end if (v329~=0) then else v330=1329 -(797 + 532) ;v331=nil;v329=1;end end end v59[3]=v21();v317=1 + 0 ;end if (v317==(1 + 0)) then v298=1;break;end end end if (1==v298) then for v319=2 -1 ,v23() do local v320=1202 -(373 + 829) ;local v321;local v322;local v323;while true do if (v320==0) then v321=0;v322=nil;v320=732 -(476 + 255) ;end if (v320==1) then v323=nil;while true do if (v321~=0) then else v322=1130 -(369 + 761) ;v323=nil;v321=1 + 0 ;end if (v321==(1 -0)) then while true do if (v322==(0 -0)) then v323=v21();if (v20(v323,1,239 -(64 + 174) )==0) then local v334=0 + 0 ;local v335;local v336;local v337;local v338;local v339;while true do if (v334==(0 -0)) then v335=336 -(144 + 192) ;v336=nil;v334=217 -(42 + 174) ;end if (v334==(2 + 0)) then v339=nil;while true do if (v335==1) then local v343=0 + 0 ;while true do if (v343~=(1 + 0)) then else v335=2;break;end if (v343~=(1504 -(363 + 1141))) then else v338=nil;v339=nil;v343=1;end end end if (v335==(1580 -(1183 + 397))) then local v344=0;while true do if (v344~=(2 -1)) then else v335=1 + 0 ;break;end if (v344==0) then v336=0 + 0 ;v337=nil;v344=1976 -(1913 + 62) ;end end end if (v335~=2) then else while true do if (v336==1) then local v347=0;local v348;local v349;while true do if (v347~=(1 + 0)) then else while true do if (v348~=(0 -0)) then else v349=1933 -(565 + 1368) ;while true do if (v349~=1) then else v336=7 -5 ;break;end if (v349==0) then local v360=0;local v361;while true do if (v360~=0) then else v361=0;while true do if ((1662 -(1477 + 184))~=v361) then else v349=1;break;end if (v361~=0) then else v339={v22(),v22(),nil,nil};if (v337==(856 -(564 + 292))) then local v362=0 -0 ;local v363;local v364;while true do if (v362==0) then v363=0;v364=nil;v362=1;end if (v362==1) then while true do if (v363==0) then v364=0 -0 ;while true do if (v364==(304 -(244 + 60))) then v339[3]=v22();v339[4]=v22();break;end end break;end end break;end end elseif (v337==1) then v339[3]=v23();elseif (v337==2) then v339[3]=v23() -(2^(13 + 3)) ;elseif (v337~=(479 -(41 + 435))) then else local v367=1001 -(938 + 63) ;local v368;while true do if (v367==0) then v368=0;while true do if (v368~=0) then else v339[3 + 0 ]=v23() -((1127 -(936 + 189))^(6 + 10)) ;v339[1617 -(1565 + 48) ]=v22();break;end end break;end end end v361=1 + 0 ;end end break;end end end end break;end end break;end if (v347==0) then v348=0;v349=nil;v347=1139 -(782 + 356) ;end end end if (v336~=2) then else local v350=0;while true do if (v350==1) then v336=270 -(176 + 91) ;break;end if (v350==(0 -0)) then if (v20(v338,1 -0 ,1093 -(975 + 117) )==(1876 -(157 + 1718))) then v339[2]=v61[v339[2 + 0 ]];end if (v20(v338,2,2)==1) then v339[3]=v61[v339[3]];end v350=1;end end end if (v336~=(10 -7)) then else if (v20(v338,10 -7 ,3)~=1) then else v339[1022 -(697 + 321) ]=v61[v339[4]];end v56[v319]=v339;break;end if (v336~=(0 -0)) then else local v352=0 -0 ;while true do if (v352==1) then v336=1;break;end if (v352~=(0 -0)) then else v337=v20(v323,1 + 1 ,3);v338=v20(v323,4,11 -5 );v352=1;end end end end break;end end break;end if (v334==1) then v337=nil;v338=nil;v334=2;end end end break;end end break;end end break;end end end v55=7 -4 ;break;end end break;end end end v111=1228 -(322 + 905) ;end if (v111==(612 -(602 + 9))) then v108=1190 -(449 + 740) ;break;end end break;end end end end break;end end end break;end if (v54~=(874 -(826 + 46))) then else local v103=0;local v104;while true do if ((947 -(245 + 702))==v103) then v104=0;while true do if (v104~=(0 -0)) then else v59=nil;v60=nil;v104=1 + 0 ;end if (v104==1) then v54=3;break;end end break;end end end end break;end if (v53==(1899 -(260 + 1638))) then v56=nil;v57=nil;v53=442 -(382 + 58) ;end if (v53==(6 -4)) then v58=nil;v59=nil;v53=3 + 0 ;end end end local function v29(v62,v63,v64) local v65=v62[1];local v66=v62[2];local v67=v62[3];return function(...) local v68=v65;local v69=v66;local v70=v67;local v71=v27;local v72=1;local v73= -1;local v74={};local v75={...};local v76=v12("#",...) -1 ;local v77={};local v78={};for v89=0,v76 do if (v89>=v70) then v74[v89-v70 ]=v75[v89 + 1 ];else v78[v89]=v75[v89 + 1 ];end end local v79=(v76-v70) + 1 ;local v80;local v81;while true do local v90=0;while true do if (v90==0) then v80=v68[v72];v81=v80[1];v90=1;end if (v90==1) then if (v81<=19) then if (v81<=9) then if (v81<=4) then if (v81<=1) then if (v81==0) then local v114=0;local v115;local v116;local v117;while true do if (v114==1) then v117={};v116=v10({},{__index=function(v230,v231) local v232=v117[v231];return v232[1][v232[2]];end,__newindex=function(v233,v234,v235) local v236=v117[v234];v236[1][v236[2]]=v235;end});v114=2;end if (v114==0) then v115=v69[v80[3]];v116=nil;v114=1;end if (v114==2) then for v238=1,v80[4] do local v239=0;local v240;while true do if (v239==0) then v72=v72 + 1 ;v240=v68[v72];v239=1;end if (v239==1) then if (v240[1]==2) then v117[v238-1 ]={v78,v240[3]};else v117[v238-1 ]={v63,v240[3]};end v77[ #v77 + 1 ]=v117;break;end end end v78[v80[2]]=v29(v115,v116,v64);break;end end else v78[v80[2]]=v78[v80[3]][v78[v80[4]]];end elseif (v81<=2) then v78[v80[2]]=v78[v80[3]];elseif (v81==3) then if v78[v80[2]] then v72=v72 + 1 ;else v72=v80[3];end else for v210=v80[2],v80[3] do v78[v210]=nil;end end elseif (v81<=6) then if (v81==5) then v78[v80[2]]=v80[3];else local v124=0;local v125;local v126;local v127;while true do if (v124==0) then v125=v80[2];v126=v78[v125];v124=1;end if (v124==1) then v127=v78[v125 + 2 ];if (v127>0) then if (v126>v78[v125 + 1 ]) then v72=v80[3];else v78[v125 + 3 ]=v126;end elseif (v126<v78[v125 + 1 ]) then v72=v80[3];else v78[v125 + 3 ]=v126;end break;end end end elseif (v81<=7) then v64[v80[3]]=v78[v80[2]];elseif (v81>8) then v72=v80[3];else v78[v80[2]]();end elseif (v81<=14) then if (v81<=11) then if (v81>10) then v78[v80[2]][v80[3]]=v78[v80[4]];else do return;end end elseif (v81<=12) then local v132=v80[2];local v133=v78[v132 + 2 ];local v134=v78[v132] + v133 ;v78[v132]=v134;if (v133>0) then if (v134<=v78[v132 + 1 ]) then v72=v80[3];v78[v132 + 3 ]=v134;end elseif (v134>=v78[v132 + 1 ]) then v72=v80[3];v78[v132 + 3 ]=v134;end elseif (v81>13) then local v175;local v176;local v177;v78[v80[2]]=v78[v80[3]][v78[v80[4]]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v78[v80[3]];v72=v72 + 1 ;v80=v68[v72];v177=v80[3];v176=v78[v177];for v215=v177 + 1 ,v80[4] do v176=v176   .. v78[v215] ;end v78[v80[2]]=v176;v72=v72 + 1 ;v80=v68[v72];v175=v80[2];v78[v175](v78[v175 + 1 ]);else local v185=0;local v186;local v187;while true do if (v185==1) then for v299=1, #v77 do local v300=0;local v301;while true do if (v300==0) then v301=v77[v299];for v313=0, #v301 do local v314=v301[v313];local v315=v314[1];local v316=v314[2];if ((v315==v78) and (v316>=v186)) then local v318=0;while true do if (v318==0) then v187[v316]=v315[v316];v314[1]=v187;break;end end end end break;end end end break;end if (v185==0) then v186=v80[2];v187={};v185=1;end end end elseif (v81<=16) then if (v81>15) then if (v78[v80[2]]==v80[4]) then v72=v72 + 1 ;else v72=v80[3];end else local v136=0;local v137;while true do if (v136==0) then v137=nil;v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v136=1;end if (3==v136) then v72=v72 + 1 ;v80=v68[v72];v72=v80[3];break;end if (v136==1) then v137=v80[2];v78[v137]=v78[v137](v78[v137 + 1 ]);v72=v72 + 1 ;v80=v68[v72];v136=2;end if (2==v136) then v64[v80[3]]=v78[v80[2]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3];v136=3;end end end elseif (v81<=17) then v78[v80[2]]=v78[v80[3]][v80[4]];elseif (v81>18) then local v189=v80[2];v78[v189]=v78[v189](v78[v189 + 1 ]);else v78[v80[2]]=v29(v69[v80[3]],nil,v64);end elseif (v81<=29) then if (v81<=24) then if (v81<=21) then if (v81>20) then local v140;v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3]~=0 ;v72=v72 + 1 ;v80=v68[v72];v140=v80[2];v78[v140]=v78[v140](v13(v78,v140 + 1 ,v80[3]));v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v78[v80[3]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]][v80[3]]=v78[v80[4]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]][v80[3]]=v78[v80[4]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3];else v78[v80[2]]=v64[v80[3]];end elseif (v81<=22) then local v152=0;local v153;while true do if (0==v152) then v153=v80[2];v78[v153]=v78[v153](v13(v78,v153 + 1 ,v80[3]));break;end end elseif (v81==23) then local v192=0;while true do if (v192==0) then v78[v80[2]][v80[3]]=v80[4];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v192=1;end if (v192==1) then v72=v72 + 1 ;v80=v68[v72];v78[v80[2]][v80[3]]=v80[4];v72=v72 + 1 ;v192=2;end if (2==v192) then v80=v68[v72];v78[v80[2]]=v80[3];v72=v72 + 1 ;v80=v68[v72];v192=3;end if (v192==3) then v72=v80[3];break;end end elseif (v78[v80[2]]<=v78[v80[4]]) then v72=v72 + 1 ;else v72=v80[3];end elseif (v81<=26) then if (v81>25) then local v154=v80[2];v78[v154](v13(v78,v154 + 1 ,v80[3]));else v78[v80[2]]=v78[v80[3]] + v80[4] ;end elseif (v81<=27) then local v156;v78[v80[2]]=v80[3]~=0 ;v72=v72 + 1 ;v80=v68[v72];v156=v80[2];v78[v156]=v78[v156](v78[v156 + 1 ]);v72=v72 + 1 ;v80=v68[v72];v64[v80[3]]=v78[v80[2]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3];v72=v72 + 1 ;v80=v68[v72];v72=v80[3];elseif (v81==28) then v78[v80[2]]=v78[v80[3]] -v80[4] ;else v78[v80[2]]=v80[3]~=0 ;end elseif (v81<=34) then if (v81<=31) then if (v81==30) then local v163=v80[3];local v164=v78[v163];for v173=v163 + 1 ,v80[4] do v164=v164   .. v78[v173] ;end v78[v80[2]]=v164;elseif (v78[v80[2]]~=v80[4]) then v72=v72 + 1 ;else v72=v80[3];end elseif (v81<=32) then v78[v80[2]][v80[3]]=v80[4];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]][v80[3]]=v80[4];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v80[3];v72=v72 + 1 ;v80=v68[v72];v72=v80[3];elseif (v81>33) then if (v80[2]<v78[v80[4]]) then v72=v72 + 1 ;else v72=v80[3];end else v63[v80[3]]=v78[v80[2]];end elseif (v81<=37) then if (v81<=35) then local v172=v80[2];v78[v172](v78[v172 + 1 ]);elseif (v81==36) then v78[v80[2]]=v63[v80[3]];else v78[v80[2]][v80[3]]=v80[4];end elseif (v81<=38) then if (v80[2]==v78[v80[4]]) then v72=v72 + 1 ;else v72=v80[3];end elseif (v81>39) then local v203=0;while true do if (v203==1) then v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v203=2;end if (v203==2) then v80=v68[v72];v78[v80[2]][v80[3]]=v78[v80[4]];v72=v72 + 1 ;v80=v68[v72];v203=3;end if (v203==3) then v78[v80[2]]=v80[3];v72=v72 + 1 ;v80=v68[v72];v72=v80[3];break;end if (v203==0) then v78[v80[2]][v80[3]]=v80[4];v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v203=1;end end else local v204=0;local v205;while true do if (v204==5) then v205=v80[2];v78[v205](v13(v78,v205 + 1 ,v80[3]));v72=v72 + 1 ;v80=v68[v72];v204=6;end if (2==v204) then v78[v205](v13(v78,v205 + 1 ,v80[3]));v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v204=3;end if (4==v204) then v80=v68[v72];v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v204=5;end if (v204==3) then v72=v72 + 1 ;v80=v68[v72];v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v204=4;end if (v204==1) then v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v205=v80[2];v204=2;end if (0==v204) then v205=nil;v78[v80[2]]=v64[v80[3]];v72=v72 + 1 ;v80=v68[v72];v204=1;end if (v204==6) then v72=v80[3];break;end end end v72=v72 + 1 ;break;end end end end;end return v29(v28(),{},v17)(...);end return v15("LOL!213O00028O00027O0040026O000840026O001440026O00F03F03043O007368626603073O0043617074696F6E03093O00637261736820666978026O00184003063O00486569676874026O00444003073O006F6E436C69636B03043O0074657374030C3O0063726561746542752O746F6E03063O004D79466F726D026O00104003053O005769647468026O006940030B3O0063726561746554696D657203083O004D61696E466F726D03083O00496E74657276616C03073O004F6E54696D6572026O001C40025O00405F4003043O004C656674026O0024402O033O00546F70025O00804140030A3O00637265617465466F726D03063O00414F42526570025O00408F4003073O00456E61626C65642O0100833O0012053O00014O0004000100063O000E260002000600013O0004093O000600012O0004000500063O0012053O00033O0026103O0077000100030004093O007700010026100001001A000100040004093O001A0001001205000700013O00261000070011000100050004093O00110001001214000800063O003025000800070008001205000100093O0004093O001A00010026100007000B000100010004093O000B0001001214000800063O0030280008000A000B00122O000800063O00122O0009000D3O00102O0008000C000900122O000700053O00044O000B00010026100001002A000100050004093O002A0001001205000700013O00261000070024000100050004093O0024000100062O00063O000100022O00023O00054O00023O00043O001205000100023O0004093O002A00010026100007001D000100010004093O001D0001001205000500014O0004000600063O001205000700053O0004093O001D00010026100001003D000100030004093O003D0001001205000700013O00261000070035000100050004093O003500010012140008000E3O00120F0009000F6O00080002000200122O000800063O00122O000100103O00044O003D00010026100007002D000100010004093O002D00010012140008000F3O00302000080011001200122O0008000F3O00302O0008000A001200122O000700053O00044O002D000100261000010047000100090004093O00470001001214000700133O001215000800146O00098O0007000900024O000200073O00102O00020015000300102O00020016000600122O000100173O00261000010058000100100004093O00580001001205000700013O00261000070050000100050004093O00500001001214000800063O003025000800110018001205000100043O0004093O00580001000E260001004A000100070004093O004A0001001214000800063O00302000080019001A00122O000800063O00302O0008001B001C00122O000700053O00044O004A00010026100001006B000100020004093O006B0001001205000700013O00261000070063000100050004093O006300010012140008001D4O001B000900016O00080002000200122O0008000F3O00122O000100033O00044O006B00010026100007005B000100010004093O005B0001000212000800013O0012070008001E3O000212000800023O0012070008000D3O001205000700053O0004093O005B000100261000010071000100010004093O007100012O0004000200023O0012050003001F3O001205000400013O001205000100053O00261000010008000100170004093O000800010030250002002000210004093O008100010004093O000800010004093O008100010026103O007C000100010004093O007C0001001205000100014O0004000200023O0012053O00053O0026103O0002000100050004093O000200012O0004000300043O0012053O00023O0004093O000200012O000D8O000A3O00013O00033O00073O00028O00026O00F03F030B3O006F70656E50726F63652O73030B3O00526563522O6F6D2E65786503013O0062025O00E06F4003073O0064657374726F7901213O001205000100013O00261000010010000100020004093O00100001001214000200033O001205000300044O0023000200020001001214000200053O00261F0002000C000100010004093O000C0001001214000200053O00261000020020000100060004093O00200001001214000200033O001205000300044O00230002000200010004093O0020000100261000010001000100010004093O000100012O002400025O000E220001001B000100020004093O001B00012O0024000200014O002400035O0006180003001B000100020004093O001B000100201100023O00072O00080002000100012O0024000200013O0020190002000200022O0021000200013O001205000100023O0004093O000100012O000A3O00017O00073O00028O00026O00F03F03073O00414F425363616E03053O00436F756E74030C3O006175746F412O73656D626C6503053O003A0A64622003073O0044657374726F79022F3O001205000200014O0004000300043O00261000020007000100010004093O00070001001205000300014O0004000400043O001205000200023O00261000020002000100020004093O0002000100261000030009000100010004093O00090001001214000500034O000200066O00130005000200022O0002000400053O0006030004002E00013O0004093O002E0001001205000500014O0004000600063O00261000050013000100010004093O00130001001205000600013O00261000060016000100010004093O00160001001205000700013O00201100080004000400201C000800080002001205000900023O000406000700240001001214000B00054O000E000C0004000A00122O000D00066O000E00016O000C000C000E4O000B0002000100040C0007001D00010020110007000400072O00080007000100010004093O002E00010004093O001600010004093O002E00010004093O001300010004093O002E00010004093O000900010004093O002E00010004093O000200012O000A3O00017O000B3O00028O00027O004003063O00414F4252657003073O005365617263684103083O005265706C6163654103073O005365617263684203083O005265706C61636542030B3O003731203735203639203734030B3O002O30202O30202O30202O30026O00F03F030B3O00353120373520363920373400323O0012053O00014O0004000100013O000E260001000200013O0004093O00020001001205000100013O000E2600020010000100010004093O00100001001214000200033O001227000300043O00122O000400056O00020004000100122O000200033O00122O000300063O00122O000400076O00020004000100044O003100010026100001001F000100010004093O001F0001001205000200013O000E260001001A000100020004093O001A0001001205000300083O001207000300043O001205000300093O001207000300053O0012050002000A3O002610000200130001000A0004093O001300010012050001000A3O0004093O001F00010004093O00130001002610000100050001000A0004093O00050001001205000200013O00261000020029000100010004093O002900010012050003000B3O001207000300063O001205000300093O001207000300073O0012050002000A3O002610000200220001000A0004093O00220001001205000100023O0004093O000500010004093O002200010004093O000500010004093O003100010004093O000200012O000A3O00017O00",v9(),...);

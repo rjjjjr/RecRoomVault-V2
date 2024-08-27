@@ -1,0 +1,3 @@
+if you want to spawn in stuff just weapons/props and that just swap your [ShareCamera] to it and it should work (wont work with bosses and non prop items put utf 16 on too 
+heres the boss method now
+so you spawn in the clothing customizer in your dorm turn off uft-16 then value type string scan [FeedbackTool] and swap it to [ClothingCustomizerTool] then go on rec room and use and recall the clothing thing in your dorm then go on cheat engine turn on utf -16 then scan [ClothingCustomizerMarkerSet] to [WHAT EVER VALUE]

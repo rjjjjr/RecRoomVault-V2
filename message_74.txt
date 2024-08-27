@@ -1,0 +1,185 @@
+███╗   ███╗ █████╗ ██╗     ███████╗████████╗███████╗██╗  ██╗██╗██████╗ ████████╗    ██╗   ██╗ █████╗ ██╗     ██╗   ██╗███████╗███████╗    ███████╗ ██████╗  ██████╗ 
+████╗ ████║██╔══██╗██║     ██╔════╝╚══██╔══╝██╔════╝██║  ██║██║██╔══██╗╚══██╔══╝    ██║   ██║██╔══██╗██║     ██║   ██║██╔════╝██╔════╝    ██╔════╝██╔═══██╗██╔════╝ 
+██╔████╔██║███████║██║     █████╗     ██║   ███████╗███████║██║██████╔╝   ██║       ██║   ██║███████║██║     ██║   ██║█████╗  ███████╗    █████╗  ██║   ██║██║  ███╗
+██║╚██╔╝██║██╔══██║██║     ██╔══╝     ██║   ╚════██║██╔══██║██║██╔══██╗   ██║       ╚██╗ ██╔╝██╔══██║██║     ██║   ██║██╔══╝  ╚════██║    ██╔══╝  ██║   ██║██║   ██║
+██║ ╚═╝ ██║██║  ██║███████╗███████╗   ██║   ███████║██║  ██║██║██║  ██║   ██║        ╚████╔╝ ██║  ██║███████╗╚██████╔╝███████╗███████║    ██║     ╚██████╔╝╚██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝   ╚═╝         ╚═══╝  ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝╚══════╝    ╚═╝      ╚═════╝  ╚═════╝ 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        _ _                                                   _ 
+    ____               | | |                                                 | |
+   / __ \  ___ ___   __| | | ___ _ __   ___    ___  _ __     ___ ___  _ __ __| |
+  / / _` |/ __/ _ \ / _` | |/ _ \ '_ \ / _ \  / _ \| '_ \   / __/ _ \| '__/ _` |
+ | | (_| | (_| (_) | (_| | |  __/ | | |  __/ | (_) | | | | | (_| (_) | | | (_| |
+  \ \__,_|\___\___/ \__,_|_|\___|_| |_|\___|  \___/|_| |_|  \___\___/|_|  \__,_|
+   \____/                                                                       
+                                                                                
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+THESE ARE TEXTURE VALUES DOWN BELOW FOR MALETSHIRT                                                                                                                                                              
+
+
+birthday
+922f229c-124f-4f07-b4e3-19138420ca19,2ee3944d-e9fb-4959-973e-570a7fc6cc57,ceb07e4f-50a9-4ed0-b50b-c59d92ba66b5
+
+scifi face blue
+
+bda7a57e-5227-49f4-a119-e3f166604738,0440f08f-ef1d-49d8-942b-523056e8bb45,4ca3347a-dc87-412f-9eb1-799372e6fdd1
+
+alpaca
+
+941c046e-4e95-49f8-a7d7-19071fcc3c94,0440f08f-ef1d-49d8-942b-523056e8bb45,703ff56b-560d-4ff4-8c63-d195e879a328
+
+hang in there
+815138e6-b0dc-459c-9538-20f5bbd37d6b,0440f08f-ef1d-49d8-942b-523056e8bb45,8f19d7f9-4f28-48ab-a1c5-d8f4f788514c
+
+2019 
+
+6kPcLZtEqU2Hs4yBFvc_sA,0440f08f-ef1d-49d8-942b-523056e8bb45,br9hzhDoZUmIevgl7SJkmg
+
+cyber trash
+
+Ib_iMwvUm0CJ-t_Thwt77Q,0440f08f-ef1d-49d8-942b-523056e8bb45,d42UBeUO4UO3Q2F8IpeRbQ
+
+early access
+
+oMz5rMzCxkiw9690ZkvlGw,gW2zFv0sFEmiodfw8p9P-Q
+
+orange t
+
+95e4cc30-cb68-473d-a395-feadf5b51512,0440f08f-ef1d-49d8-942b-523056e8bb45
+
+emerald syndicate
+
+jna5wcWK90WokJyoeJH1iw,0440f08f-ef1d-49d8-942b-523056e8bb45,MPfe2wahQECCDGfhZE-drA
+
+scifi face pink
+
+4d52bbd6-ef74-45ae-a6c2-bde10ab8eb16,0440f08f-ef1d-49d8-942b-523056e8bb45,4ca3347a-dc87-412f-9eb1-799372e6fdd1
+
+2016
+
+5864d23d-1a86-40a6-a52c-46ee670e4508,2ee3944d-e9fb-4959-973e-570a7fc6cc57,167ba0d4-4fac-4143-b5ae-1dbd8e02dc76
+
+svfrcc
+
+14afd295-bcd0-4595-80dc-d477618b9ab9,2ee3944d-e9fb-4959-973e-570a7fc6cc57,a74e6c0d-1300-4928-9141-977a711b71c4
+
+video contest purple/silver
+
+owoIOIEM70e6WxnYdlKYWQ,0440f08f-ef1d-49d8-942b-523056e8bb45,t2do8WSejE-Y0aiEirKw9g
+
+
+orange video contest
+
+evgH6VWUgkKJNews32hUxQ,0440f08f-ef1d-49d8-942b-523056e8bb45,v0GsPFC7cU-_JNG4-ERfog
+
+happy tree
+
+TtncjvYcK0qHqWN-IMMoqg,0440f08f-ef1d-49d8-942b-523056e8bb45,hHhjZeLcaUGN1OyFoYHznw
+
+MaleTShirt_Shirt_Cyber_Junk_City_Combination
+
+nLRxEIBhUkyQsfrk3nzsDA,0440f08f-ef1d-49d8-942b-523056e8bb45,n4hqSCv9OUewI30KnbPhFw
+
+class of 2018
+
+6kPcLZtEqU2Hs4yBFvc_sA,0440f08f-ef1d-49d8-942b-523056e8bb45,NxMm0sSBdUatynU16o0_Zw
+
+laser alpha
+
+c0ff7719-c56a-4934-831b-506ad0f51cca,3259238f-4a9e-4e06-99de-6e7324fa0894,e38294cf-6279-4863-9aea-1a19aeaf8476
+
+MaleTShirt_Shirt_2D_Contest_Winner_Combination
+
+fwIgUAM_C0WhKds0O6DyPg,0440f08f-ef1d-49d8-942b-523056e8bb45,fJVxsLWuTESd-2xTCJPZ2w
+
+MaleTShirt_Shirt_2017Member_Combination
+
+815138e6-b0dc-459c-9538-20f5bbd37d6b,0440f08f-ef1d-49d8-942b-523056e8bb45,75162f12-44e7-499f-bc6c-9b0612e9164b
+
+MaleTShirt_Shirt_Hyper_Noodle_Ramen_Combination
+
+M1JVd5ur7U2ZtpvhEhPNhw,0440f08f-ef1d-49d8-942b-523056e8bb45,tzMFIJyxZE6cZNuLdaKs7w
+
+MaleTShirt_Shirt_VideoContest_GrayRed_Combination
+
+TuAjeDmPuUmFr_ESx4q6WA,0440f08f-ef1d-49d8-942b-523056e8bb45,AXtRUZcYWU6g1ZtM-L4vfQ
+
+MaleTShirt_Shirt_Helixx_Combination
+
+f8635fe2-90bc-42c8-9bbe-3387b5157e18,2ee3944d-e9fb-4959-973e-570a7fc6cc57,49934059-cc45-46ce-8277-f96959e1f6ba
+
+MaleTShirt_Shirt_VideoContest_GreenSilver_Combination
+
+eb1vYTP_KEGQH-f33_whQg,0440f08f-ef1d-49d8-942b-523056e8bb45,t2do8WSejE-Y0aiEirKw9g
+
+MaleTShirt_Shirt_Blue_VideoContest_Generic_Combination
+
+v12eJ8louE-cW7-pCGzVLQ,0440f08f-ef1d-49d8-942b-523056e8bb45,v0GsPFC7cU-_JNG4-ERfog
+
+MaleTShirt_Shirt_RecCon_ForbiddenOne_Combination
+
+zlBPAWMbOE2RuKoIy1Ps8Q,UwQiLub0-kqf4dNvQc-R0A
+
+MaleTShirt_Shirt_SquadGoals_Combination
+
+941c046e-4e95-49f8-a7d7-19071fcc3c94,0440f08f-ef1d-49d8-942b-523056e8bb45,6c395d04-2aa6-4a3e-8c2c-695932bc9736
+
+MaleTShirt_Shirt_2D_Contest_Winner_Blue_Combination
+
+LrQ1z-mTHE2vIePBwm8l_Q,0440f08f-ef1d-49d8-942b-523056e8bb45,omS7gF10C0ec0ozEoJGJXw
+
+MaleTShirt_Shirt_HappyTree_Combinatio
+
+ba6b6e1a-a09a-4ba0-9523-552869f03336,0440f08f-ef1d-49d8-942b-523056e8bb45,d461ca71-45c9-415e-8e09-ba93e8d73450
+
+MaleTShirt_Shirt_2D_Contest_Winner_Green_Combination
+
+UUlB4S3GVUGyil6ZK-EbWQ,0440f08f-ef1d-49d8-942b-523056e8bb45,omS7gF10C0ec0ozEoJGJXw
+
+MaleTShirt_Shirt_2D_Contest_Winner_Yellow_Combination
+
+ZNPzHmrU6kGVQW7Q5ei03w,0440f08f-ef1d-49d8-942b-523056e8bb45,fJVxsLWuTESd-2xTCJPZ2w
+
+MaleTShirt_Shirt_Laser_Graffiti_Combination
+
+g4diCmk0wEmIKUVozk9tDA,0440f08f-ef1d-49d8-942b-523056e8bb45,nHg4Uifww0GEX15L27WonA
+
+"MaleTShirt_Shirt_Orange_RecRoom_Combination
+
+95e4cc30-cb68-473d-a395-feadf5b51512,0440f08f-ef1d-49d8-942b-523056e8bb45,0c496f32-0011-4c4d-9778-59446f70c032
+
+MaleTShirt_Shirt_Cyber_Trash_Black_Combination
+
+yaQ7AlUc3kGq8_RW3eTSmQ,0440f08f-ef1d-49d8-942b-523056e8bb45,d42UBeUO4UO3Q2F8IpeRbQ
+
+MaleTShirt_Shirt_Laser_Ham_Combination
+
+dDLQbD9jtkOmw3PR5QJdfg,0440f08f-ef1d-49d8-942b-523056e8bb45,2tFUNn-4kkK6ICo_Zp065g
+
+FemaleTShirt_Shirt_Orange_Combination
+
+95e4cc30-cb68-473d-a395-feadf5b51512,05f0ee6e-c824-470e-9178-5ed576c6fe0c
+
+MaleTShirt_Shirt_RECS_Logo_Green_Combination
+
+5e7a48ed-8f08-4990-a3ae-05722c9f59a8,0440f08f-ef1d-49d8-942b-523056e8bb45,237e0aa2-5911-4704-8d2a-d446ddd2d842
+
+MaleTShirt_Shirt_RebelRose_Combination
+
+rnM1qDlYBU6_Dl1bjg0J1Q,0440f08f-ef1d-49d8-942b-523056e8bb45,OZb8bb5FNUuFYOkwANvxAA
+
+MaleTShirt_Shirt_RECS_Logo_Combination
+
+bde08851-a9e4-4faa-8f04-a0a661672472,0440f08f-ef1d-49d8-942b-523056e8bb45,237e0aa2-5911-4704-8d2a-d446ddd2d842
+
+MaleTShirt_Shirt_KO_Skull_Pink_Combination
+
+fe304452-b57b-45bc-9c1c-b85b70bcec12,0440f08f-ef1d-49d8-942b-523056e8bb45,6a007c73-d930-408a-93df-041a715e0dd4
+
+MaleTShirt_Shirt_Laser_Unicorn_Purple_Combination
+
+befa2f11-b9fd-457c-b1d5-9d82e90b70ce,0440f08f-ef1d-49d8-942b-523056e8bb45,770e7674-6f9b-41f8-b023-ae79738db0d3
+
+MaleTShirt_Shirt_KO_Skull_Combination
+
+381a9f13-5b44-48e6-8a49-221422a963f5,0440f08f-ef1d-49d8-942b-523056e8bb45,9e782751-71c6-4208-87da-3a3cffa6a4f0

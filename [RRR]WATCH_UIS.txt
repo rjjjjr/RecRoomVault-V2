@@ -1,0 +1,432 @@
+TUTORIAL FOR RETARDS
+1. select rec room in cheat engine
+2. change the value to string
+3. !!!CRUCIAL STEP!!! make sure to search with character sensitive and UTF-16 on   !!!CRUCIAL STEP!!!
+4. search for one of the menus bellow
+5. drag them to the bottom of cheat engine
+6. hit ctr + a
+7. switch your selected UI with one from bellow
+8. dont be a fucking idiot for the love of god
+
+
+
+MADE BY bena.png#6952		
+UPDATED FOR THE GITHUB REPOSITORY													     ___
+=============================================================================================================================================|||
+=============================================================================================================================================|||
+=============================================================================================================================================|||
+PLEASE USE THIS FORMAT RESPONSIBLY 													     |||
+DONT JUST THROW IT AROUND														     |||
+THIS WAS MADE FOR RESISTANCE HIGH RANKERS												     |||
+IF ANYTHING IS MISSING ITS BECAUSE ITS AN UI THAT CRASHES YOU 										     |||
+=============================================================================================================================================|||
+=============================================================================================================================================|||
+=============================================================================================================================================|||
+=============================================================================================================================================|||
+																	     ---
+
+
+
+developer ui = f364a1b83f565124fa3049eda88094b6
+
+
+makerpen props = b45c0b9e38dd82548ad7f38c1996aea6
+
+
+makerpen shapes = b90f7c778ee9b0e46b218fd01a32591b
+
+
+makerpen CV1 = c28aa2c676f53d445ab62d28ab8b8c24
+
+
+makerpen clipboard = cd91f164e79d7ea4b89025c40421a5ba
+
+
+makerpen tools = d5b050ad2b14d754e8431547dcacbf09
+
+
+makerpen inventions = e773968f508635f43bd7cf4a636aa42f
+
+
+makerpen colors = f0bc3278e22b5fb4caf0a27fb9cdd762
+
+
+orientation settings = 1ac15177830b77c42938ff4eb6ddbb24
+
+
+comfort settings = 2e7631496126f3b4bb28f633dd3cefe4
+
+
+visual settings = 39553430636c5e842a70392cf186aff9
+
+
+controll settings = 3ac3a1a61f1da934b93ab139dac165f6
+
+
+expiernce settings = 517a9276485de3949818e69cbedc1a46
+
+
+watch notifications = cf40bb4a899acda418a24c3f852d495e
+
+
+misc settings = dacd733ca9a01dd47b9d3b62a67ecfb4
+
+
+room key details = 0bebbe4f05f709140bac5bb9eebe10c3
+
+
+room cloud data = 0fdff7e71fb47be479c1e8610d4b1adb
+
+
+room consumables = 21e748822a70c55418e38875e772684c
+
+
+room details = 22a01160c947ea64d8c739e0d75fc158
+
+
+room searchable grid = 22e1236509c2f0c409308b9256053be2
+
+
+room details2.0 = 394d604652e12ac4abca27cbe6e38385
+
+
+currency details = 4884eea4c480d784dacf552b61ea25cd
+
+
+keys for sale = 49e61295d32b9864dbe21cbd2b18f3d3
+
+
+room SETTINGS consumable = 6dd017cd5b88fc649a063a8c67f1a69b
+
+
+subroom settings = 7344ba9ddca7645458d4e814b573dcd4
+
+
+room consumable details = 80b4980d9e311a8488676c4d12a0c89a
+
+
+room moderation = 84481dbcbd27d114d90d28eeea6b003f
+
+
+room currency = 8b985129cf8622741ad8a622eaac8836
+
+
+room warning = 8f2f3e8928715554c99b7b7347d37997
+
+
+room key settings = 925c696518662c94e9c8b8fd7f4a809a
+
+
+room subroom settings (again?) = 9cc8ee7cf6dde1742bd19d5ee09aaa02
+
+
+room settings 2.0 = b32bce2cb6e26634ea13eb6421b36697
+
+
+earning distribution = c9b680bd0bb7293449d5dff43f77c4e4
+
+
+currency store = f00b74920699cd34f85fe959f6990138
+
+
+consumable store detail = f3d6ef1187410aa47976230ab88d6fcd
+
+
+photo details = 0c3cd8682d2a485499c859f1e77d2c0d
+
+
+photo grid = 3150eadac2b99d84f96174b755170bf3
+
+
+photo details = 33b33d3a97e5c834fb329b365d0528e8
+
+
+enter code page = 0c9cfc900870e854ba29ed90b82ea9ac
+
+
+invite page = 1c3212172f9de194fa5a579544ab7602
+
+
+refered friends = 902b09e01a7619c49a7debe1dcfbb57d
+
+
+action code page = 941a3fec981877646b0b517969bd5ebd
+
+
+refferal reward page = a4fae5fa882e3a24eba60206c2e017f7
+
+				
+mr bean pick up the phone.mp3 = cc3d8c80f67d9d74cbb4a538a6a3e56a
+
+
+share link page= cc8bbd0865cdc234b9dca9ab820e395a
+
+
+Club reports = 0cb31b28cf4187d4b8bf069516bbffb6
+
+
+club settings (SETUP) = 0f4da50bc52019d459c9ae69a28c3a69
+
+
+club details = 125d44c81d90e07479c20c2e8027eb50
+
+
+club create (2) = 141ba0c232d77894581defe69baedef9
+
+
+club events (manage) = 29dcfe4e61e15ab4cbaf470c60fea273
+
+
+club searchablegrid = 2b5f2ff2ce7d6d94a962a663a0c0f443
+
+
+club announcement edit = 316ea1fa440db864eba7a8f239d32f87
+
+
+club settings general 2 = 3c6c1af5db438fe44be545dc9d15c246
+
+
+club search tab = 3c8d3e3feced82b459d22407cd9c0db8
+
+
+club settings setup 1 = 4394a4ff6a7c3044c9d79881cd054095
+
+
+club manage announcements = 509b07ce2f1ffb447b0c674716c205d6
+
+
+club settings GENERAL = 5363a43e0eab1b84e8996051d6ac8ae8
+
+
+club join requests = 5768f76110774294d9171ab000b20542
+
+
+club edit player = 6337c809a7d26e449ab9b63bd05d2d6f
+
+
+my clubs TEMP? = 6345f8edc4424b8468be073caa9fc2d7
+
+
+club create 1 = 63c46c8a76aa5704c8dc47a03513e80f
+
+
+club browser = 76d1dbf7b466dca47ae327e3cc6e4657
+
+
+club add ban = 81a1f1864d060864c8a799b2e9c6d06b
+
+
+club announcement tab = 869abeb199a532d4a9f7c275df5ec205
+
+
+clubhouse picker = 9bfc3c93391f6e04d80eb7ddb6e4eba0
+
+
+club deleter = b93f2289fe29f344891cdaa6942b2aeb
+
+
+club add ban = bb69852686ac8ca4b8793bd8d2b1ac8f
+
+
+club perm settings = c11040ce52e95e340b70001632acb8ef
+
+
+club send invite page = c3c8e5c0e7e5817408593f4631ba5631
+
+
+club announcement detail = d4696e7a79de8624ea15cf9c4dfc9426
+
+
+club permission settings (another one) = d61497c4f62793c498745a685ee4f376
+
+
+club create3 = f3ac20341fd0bf84cab32914ae53b8a3
+
+
+club members = faa6d1a292b12b84390954b7ce18aa48
+
+
+club event searchable grid = fe0670e3a13756a4388d3d2f02292754
+
+
+reward picker = 0e35a849316f22441b71c060a491dabc
+
+
+avatar customization HAIR = 10552b3ffc622ad4ebc4c0555687e8a9
+
+
+adjust eye = 37549854d954af1408d1ab866bb6390e
+
+
+customization complete = 3a559097527d47240b7617989f5b3c46
+
+
+customization face = 624d95f282c8a8943a3a648c22cc945b
+
+
+customization gloves = 644c5d42f14226a48a43b4d9d69d0333
+
+
+adjust your gamer bear = 72846548307f93b458efa39136092588
+
+
+adjust ur shitty mouth = 74faac11f1fc82e46bdb48fde23f15d3
+
+
+customization main catagory TITLEFLOW = a5b7d8fcfa0275d4c9081b5a5d4bdc7c
+
+
+customization hats = a61bc1ebf122fa041a386a7d3b3c65bf
+
+
+customization beards = b8a0daa3900adb349954d975895ee926
+
+
+customization shirts = cd8c0fcbe46c2c84eaac61b8ed97cfcc
+
+
+customization adjust hair = cf0f8ca286f56a54dae3392c6cf92b44
+
+
+customization search = d055295f16241634795deda8b377014b
+
+
+customization adjust hat = e8c01f49ca785344a85d407e8eb5f3d0
+
+
+event search = 10ee93468fb69c248b1831b1bd859794
+
+
+event instances = 1d090697d6c00c444a0dc8b438d99e07
+
+
+my events = 1e11421ec86c95741b20fc2891ecc13e
+
+
+event browser = 33234a29234f9d6479f4b9ba028693ce
+
+
+event details = 4c31ceeb5606fff4da49bc46b5cb58a3
+
+
+event setup = 9cfcb4ce85eda264a88c86009133f3bd
+
+
+my events temp = c0ea2335104c7c2419757832a3f461cc
+
+
+player outfit = 12ae73a05acd1fc4b9b2f38d08b2f3c3
+
+
+store inventions = 30905bfe44efc5546966b2ce894b5bdc
+
+
+edit custom avatar item = 45373c9436ddc25408def9d8ed5afe4e
+
+
+avatar item details = 57c24e26d5219fa4bbe28bc0311fac2a
+
+
+wishlists = 65fa878cdc7564f4cae0884cfd2488be
+
+
+store clothing = 7fea253e1335c8b488f9730d574f3bfb
+
+
+rec room+ store = 81b0058456d59954196bd3228a343567
+
+
+store item search = 896d2c6ddad3e604a876513c3891cb2e
+
+
+store consumables = 902888605156f084282b2441a06ab836
+
+
+store featured = 9868a76917a13c8419113c2433541f31
+
+
+item details = 9910a9aa72e09d84baba4183e5e55686
+
+
+invention carousel = 99d1d711170daec4494a92dc94d540d2
+
+
+tokens for sale = b539259e6f4f352458dec3a343c925e5
+
+
+store carousel results = cc5fd82892d75094b93a878d5a5b1205
+
+
+starter pack for sale = ce24d150b1b5b7745897ca5d391c0c45
+
+
+friendotron main = f4c982d8c67e1314f9e8b2407a853500
+
+
+invention store main = fdf6b8f55d067ac4da2854210ee92b5c
+
+
+profile settings customize = 16c0f5bc043b9234fa14904d102ed391
+
+
+subscrieboors = b8a2a5999c4beaa44930db6b44bfb0da
+
+
+email = d235d27d021ca1841b0a39755202932a
+
+
+profile settings = db5d99293870eb64292d00d13b09364b
+
+
+profile settings (account) = dc4807edbca1ba44394265fcb4f2bb54
+
+
+portfolio = e94684fdd8e9c6b4982754c672988a11
+
+
+subscription = fb897d254ae5d5245b7f8a55a3bcdcfb
+
+
+player highlight = 1ee2aea157ea892469ba8413bc50d82b
+
+
+play highlight no grid = 85247923c4462fe4ab4fb9327a070b4b
+
+
+play search = acc459086bafad848ba84459b61f0eca
+
+
+play highlight grid view = b7cde87e664e4634d9e8a9cec31660e6
+
+
+first time choose room = c1c2ca833a1241f42bdc397338ab26d4
+
+
+sub pages = c528ef0528e5ca34f9e170c1f143f385
+
+
+first time catagory select ef990e06f171daf4096965fb4d9308fd
+
+
+backpack room page = 23b72e792914bea4b955e0f5b5aa0e37
+
+
+backpack other page = 7d82a43c3b2e1b4408093c1c9a41c705
+
+
+backpack skins page = 9510c26a2c77852468f4d55318789ac0
+
+
+backpack food page = 9967214ab79be454f8e7f6052d6888cb
+
+
+backpack tools page = c97b1395aadced24cbf1f0c50fcfe613
+
+
+testcase management = 2c05971098c8e094097101fd0071c148
+
+
+feedpage = 2d1d718bafa1caa4d82d4b2ab662c7b8
+
+
+inventions searchable grid = 2d4fe146fda4cc345929be6bd05d821b

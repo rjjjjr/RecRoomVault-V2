@@ -1,0 +1,14 @@
+-----------------------------MADE BY MADDIE----------------------------------------------------
+Watches:
+
+Orientation Watch: 1ac15177830b77c42938ff4eb6ddbb24
+
+explore tab: a4b675c42dadc984a881e5aae5af85c7
+
+This method is to Skip Orientation 
+Make sure when you load in do not open your watch yet
+First set the scan type to string then turn on UTF-16 or this
+Will not work after scan for the Orientation Watch then there should be 2
+Results change them to the Explore Tab Then when you do that open your menu and click dorm room
+YOUR DONE
+-----------------------------MADE BY MADDIE----------------------------------------------------

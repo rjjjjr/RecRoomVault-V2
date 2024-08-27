@@ -1,0 +1,12 @@
+you can have infinite ammo
+only takes 3 scans
+to find value
+3
+2
+1
+0
+separate for each gun
+also, there's godmode
+do true/false whether you need to be revived or not	
+
+By Smapty#2855 and bena.png#6952

@@ -1,0 +1,10 @@
+1: launch cheat engine and atach it to rec room and use the bypas blah blah
+2: run the ce enable script
+3: make sure the value is all
+4: count how many bullets are in the gun ur using
+5: put the number of bullets into the text example 24
+6: once you put the amonut of bullets in there shoot once and then -1 number like 24 to 23 and hit next scan
+7: after you do that there should be 3 or 4 in the addreses click one adress and pes ctrl+A and press the little red arrow
+8: click on 1 adress and hit ctrl+A again and double click it the value sided part and change the value to anything like 99999
+9: and your done
+10: --------------------------------------------MADE BY MADDIE---------------------------------------------------------------------

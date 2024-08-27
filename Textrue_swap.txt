@@ -1,0 +1,12 @@
+1. Equip any color headband you want
+
+2. Use string and UTF-16 and scan "40528de7-38a3-4a7c-8f93-6d3bfa5573f2"
+
+3. Bring all the values down and replace them all with "274cb9b2-2f59-47ea-9a8d-a5b656d148c6"
+
+4. change your skintone and press the back arrow and boom cool saija helmet texture
+
+(The outfit will save if you own the saija helmet)
+
+Wrote by Lenny, ty admin ily <3
+NOTE: if you scan headband but make the value "d84993dd-4e15-4481-9450-f88a34cdbc82e" it will put a shirt on your head with a very cool texture.

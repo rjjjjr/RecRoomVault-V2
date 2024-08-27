@@ -1,0 +1,22 @@
+step 1 = make sure cheat engine is set to 4 bytes
+
+
+step 2 = use this link to get your player id https://accounts.rec.net/account?username= after the = put your @ name
+
+step 3 = copy your id it is the numbers only then scan for your id in cheat engine
+
+step 4 = once the values show up go to a custom room make sure it is a player created room and not a RRO
+
+step 5 = some red values should pop up when you join click next scan to get rid of them
+
+step 6 = now join your dorm room when you do this you should have 1 or 0 red values before you load in click next scan
+
+step 7 = now on the left click on one of the values and hit ctrl+a to select them all then click the red arrow at the bottom to bring them down
+
+step 8 = now click on one of the values you moved down and hit ctrl+a to select them all now click into the dark blue highlighted value and type 1 but do not click ok or enter
+
+step 9 = go to a rec center private or public does not matter now when you load in wait 5 seconds or so and then click ok or enter to change your id to 1 if you crash you did it wrong
+
+step 10 = now it should take a minute or two to give you maker pen permissions however if you play on steam vr you should have infinite playspace mover so you can fling yourself across the map and not get kicked you should get maker pen in about 5 to 10 minutes
+
+step 11 = if you dont get maker pen restart your game and repeat the steps moderators can not kick/ban you when you do this not even co owners because it counts you as the room owner

@@ -1,0 +1,3 @@
+delay value for laser shotgun & railgun is 1.650
+
+Once you get 1.650 in cheat engine set to -100 for spam

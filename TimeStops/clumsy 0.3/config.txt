@@ -1,0 +1,18 @@
+# filters presets. clumsy will capture packets base filter criteria
+# each entry must contains single line
+# filter-name:filter-text
+# see <https://github.com/basil00/Divert/wiki/WinDivert-Documentation#7-filter-language> for details
+
+# loopback packets can only be filtered using 'outbound'.
+
+# more general
+Wifi Drainer/Laggy Bullets: outbound
+iFrozeYou's Freeze Lag v4: inbound
+
+# more specific
+
+# ipv6 is supported but usually not that useful
+
+
+# you can add your usual filters here for your own use:
+#http requests ONLY(data transmit on other ports): outbound and tcp.DstPort == 80

@@ -1,0 +1,13 @@
+# filters presets. clumsy will capture packets base filter criteria
+# each entry must contains single line
+# filter-name:filter-text
+# see <https://github.com/basil00/Divert/wiki/WinDivert-Documentation#7-filter-language> for details
+
+
+# more general
+
+iFrozeYou's Freeze Lag: inbound
+
+
+# you can add your usual filters here for your own use:
+#http requests ONLY(data transmit on other ports): outbound and tcp.DstPort == 80

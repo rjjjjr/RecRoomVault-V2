@@ -1,0 +1,3 @@
+ 1.Start Inj.exe or injector.exe
+ 2.Type UnityWndClass
+ 3.Press enter in game

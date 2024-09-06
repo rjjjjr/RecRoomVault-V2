@@ -1,0 +1,41 @@
+-----
+
+███╗░░░███╗░█████╗░██╗░░██╗███████╗██████╗░██████╗░███████╗███╗░░██╗  ███╗░░░███╗███████╗████████╗██╗░░██╗░█████╗░██████╗░
+████╗░████║██╔══██╗██║░██╔╝██╔════╝██╔══██╗██╔══██╗██╔════╝████╗░██║  ████╗░████║██╔════╝╚══██╔══╝██║░░██║██╔══██╗██╔══██╗
+██╔████╔██║███████║█████═╝░█████╗░░██████╔╝██████╔╝█████╗░░██╔██╗██║  ██╔████╔██║█████╗░░░░░██║░░░███████║██║░░██║██║░░██║
+██║╚██╔╝██║██╔══██║██╔═██╗░██╔══╝░░██╔══██╗██╔═══╝░██╔══╝░░██║╚████║  ██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██║░░██║██║░░██║
+██║░╚═╝░██║██║░░██║██║░╚██╗███████╗██║░░██║██║░░░░░███████╗██║░╚███║  ██║░╚═╝░██║███████╗░░░██║░░░██║░░██║╚█████╔╝██████╔╝
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚══════╝╚═╝░░╚══╝  ╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═════╝░
+Method Found By Vibes?!
+Tutorial Written By 50xo
+
+-----
+
+Tutorial:
+1. Set scan type to "4 bytes" with hex enabled and toggle "Can use makerpen" in your dorm permission settings,
+2. Scan for 1, disable the permission in your watch, change the number to 0, press next scan, change the number to 1, next scan and keep repeating,
+3. Once there is 1 adress remaining, click on it and press "Ctrl + B" (Memory Viewer) and copy the top line,
+4. Set scan type to "Array Of Byte" with hex enabled,
+5. Switch rooms, scan for the AOB you copied (should be around 1000 results) and change them all the "1".
+
+-----
+
+Key Information:
+- Makerpen can NOT be used in any RRO, doing so will result in your game crashing or being logged out.
+- When somebody joins the room, you will have to replace the values with 1.
+- You have to scan every time you enter a new room.
+- The adress will be different every time you launch the game.
+- Make sure to use timestop to hold makerpen for a long amount of time (settings provided below).
+- Inventions can NOT be spawned.
+- Toggling the boxes in the "Active" section of Cheat Engine should make it so you keep MakerPen when a new player joins the room.
+- ^^ (This is done by selecting the values and pressing Space.) ^^
+
+-----
+
+Timestop Settings:
+Clumsy 0.4 V2
+"Filtering = Inbound"
+"Limitspeed - Inbound On - Outbound On - 30%"
+"Latency - Inbound On - Outbound Off - ms:4800"
+
+-----

